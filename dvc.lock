@@ -1,0 +1,21 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: data.txt
+      hash: md5
+      md5: 83cd4e1f63ee40417e473aa18883473d
+      size: 8
+    - path: train.py
+      hash: md5
+      md5: fe047a45e7a423995d834f87da94deb0
+      size: 119
+    params:
+      params.yaml:
+        lr: 3
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: f1fd78abd5ab22e94c674a09549fb0c6
+      size: 13
